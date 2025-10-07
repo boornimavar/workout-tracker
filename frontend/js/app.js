@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/api';
+const API_URL = 'https://workout-tracker-rve4.onrender.com';
 
 const form = document.getElementById('workoutForm');
 const workoutList = document.getElementById('workoutList');
