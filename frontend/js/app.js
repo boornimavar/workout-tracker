@@ -1,4 +1,4 @@
-const API_URL = 'https://workout-tracker-rve4.onrender.com';
+const API_URL = 'https://workout-tracker-rve4.onrender.com/api';
 
 const form = document.getElementById('workoutForm');
 const workoutList = document.getElementById('workoutList');
