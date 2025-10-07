@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Tracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚡ WORKOUT TRACKER ⚡</h1>
+        <div class="subtitle">[ LOG YOUR SESSIONS ]</div>
+        
+        <div id="status" class="status"></div>
+        
+        <form id="workoutForm">
+            <div class="form-group">
+                <label for="workoutType">[ WORKOUT TYPE ]</label>
+                <select id="workoutType" required>
+                    <option value="">SELECT TYPE</option>
+                    <option value="Cardio">CARDIO</option>
+                    <option value="Strength">STRENGTH</option>
+                    <option value="Yoga">YOGA</option>
+                    <option value="HIIT">HIIT</option>
+                    <option value="Sports">SPORTS</option>
+                    <option value="Flexibility">FLEXIBILITY</option>
+                    <option value="Other">OTHER</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="duration">[ DURATION (MINUTES) ]</label>
+                <input type="number" id="duration" min="1" required placeholder="30">
+            </div>
+
+            <div class="form-group">
+                <label for="intensity">[ INTENSITY LEVEL ]</label>
+                <select id="intensity" required>
+                    <option value="">SELECT INTENSITY</option>
+                    <option value="Low">LOW</option>
+                    <option value="Medium">MEDIUM</option>
+                    <option value="High">HIGH</option>
+                    <option value="Extreme">EXTREME</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="notes">[ SESSION NOTES ]</label>
+                <input type="text" id="notes" placeholder="Optional notes about your workout">
+            </div>
+
+            <button type="submit" class="btn">[ LOG WORKOUT ]</button>
+        </form>
+
+        <button id="loadBtn" class="btn">[ LOAD HISTORY ]</button>
+
+        <div id="workoutList"></div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

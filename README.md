@@ -1,0 +1,5 @@
+Flask==3.0.0
+Flask-CORS==4.0.0
+gspread==5.12.0
+google-auth==2.23.4
+gunicorn==21.2.0
